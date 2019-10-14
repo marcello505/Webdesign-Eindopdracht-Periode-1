@@ -37,6 +37,7 @@
   position: absolute;
   top: 450px;
   left: 0px;
+  width: 100%;
 }
 /* De width hiervan wordt aangepast op basis van de scherm grootte */
 .main div {
