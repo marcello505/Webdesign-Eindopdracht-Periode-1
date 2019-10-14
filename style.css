@@ -1,5 +1,6 @@
 /* Importeert de font die gebruikt wordt door de header */
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .header {
   display: flex;
@@ -42,6 +43,7 @@
   width: 90%;
   background-color: white;
   padding: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Achtergrond kleur, kan misschien aangepast worden voor een plaatje of patroon? */
@@ -63,6 +65,17 @@ body {
 
 .menubar div {
   width: 90%;
+  display: flex;
+}
+
+.menubar div a {
+  color: lightgray;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.menubar div a:hover {
+  color: white;
 }
 
 /* Tablet Schermen */
