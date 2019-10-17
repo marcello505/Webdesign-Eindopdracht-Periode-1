@@ -13,10 +13,17 @@
       <h2>Marcello Haddeman en Thomas Meeusen</h2>
     </div>
     <div class="menubar">
-      <div>
+      <div class="menubar-content">
         <a href="./index.html">Home</a>
-        <a href="./index.html">Marcello's Verslag</a>
-        <a href="./index.html">Thomas' Verslag</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="showDropdown()">
+            Verslagen ↓
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="./index.html">Marcello's Verslag</a>
+            <a href="./index.html">Thomas' Verslag</a>
+          </div>
+        </div>
         <a href="./contact/index.html">Contact</a>
       </div>
     </div>
@@ -69,5 +76,6 @@
         </p>
       </div>
     </div>
+    <script src="./javascript.js"></script>
   </body>
 </html>

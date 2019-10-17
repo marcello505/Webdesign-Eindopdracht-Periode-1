@@ -69,19 +69,68 @@ body {
   align-items: center;
 }
 
-.menubar div {
+.menubar-content {
   width: 90%;
-  display: flex;
 }
 
-.menubar div a {
+.menubar-content a {
   color: lightgray;
   text-decoration: none;
-  margin-right: 20px;
+  float: left;
+  padding: 14px 16px;
+  padding-bottom: 13px;
 }
 
-.menubar div a:hover {
+.menubar div a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
   color: white;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: lightgray;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 14px 16px;
+  padding-bottom: 13px;
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(64, 64, 64);
+  min-width: 108px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 50px;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.show {
+  display: block;
 }
 
 /* Tablet Schermen */
@@ -90,7 +139,7 @@ body {
     width: 75%;
   }
 
-  .menubar div {
+  .menubar-content {
     width: 75%;
   }
 }
@@ -101,7 +150,7 @@ body {
     width: 60%;
   }
 
-  .menubar div {
+  .menubar-content {
     width: 60%;
   }
 }
