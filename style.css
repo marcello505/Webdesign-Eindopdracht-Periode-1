@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 100%;
   height: 400px;
+  background: url(./images/circle-blues.png) repeat;
   background-color: blue;
   top: 0;
   left: 0;
@@ -42,6 +43,7 @@
 /* De width hiervan wordt aangepast op basis van de scherm grootte */
 .main-content {
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 90%;
   background-color: white;
   padding: 5px;
