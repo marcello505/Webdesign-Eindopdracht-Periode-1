@@ -40,7 +40,7 @@
   width: 100%;
 }
 /* De width hiervan wordt aangepast op basis van de scherm grootte */
-.main div {
+.main-content {
   margin-top: 10px;
   width: 90%;
   background-color: white;
@@ -48,13 +48,14 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.main div h1 {
+.main-content h1,
+.main-content h2 {
   font-family: "Merriweather", serif;
 }
 
 /* Achtergrond kleur, kan misschien aangepast worden voor een plaatje of patroon? */
 body {
-  background-color: lightgray;
+  background: url(./images/background.png) repeat;
 }
 
 .menubar {
@@ -133,9 +134,26 @@ body {
   display: block;
 }
 
+/* Verslag kaarten */
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 50%;
+}
+
+.card img {
+  width: 100%;
+}
+
 /* Tablet Schermen */
 @media only screen and (min-width: 600px) {
-  .main div {
+  .main-content {
     width: 75%;
   }
 
@@ -154,7 +172,7 @@ body {
 
 /* Desktop Schermen */
 @media only screen and (min-width: 992px) {
-  .main div {
+  .main-content {
     width: 60%;
   }
 
