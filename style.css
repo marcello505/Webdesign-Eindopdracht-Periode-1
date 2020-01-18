@@ -51,7 +51,8 @@
 }
 
 .main-content h1,
-.main-content h2 {
+.main-content h2,
+.main-content h3 {
   font-family: "Merriweather", serif;
 }
 
